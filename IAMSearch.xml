@@ -16,6 +16,7 @@
 		padding:20px;
 	}
 	.tftextinput2{
+		width:210px;
 		margin: 0;
 		padding: 5px 15px;
 		font-family: Arial, Helvetica, sans-serif;
@@ -26,6 +27,7 @@
 		border-bottom-left-radius: 5px 5px;
 	}
 	.tfbutton2 {
+		width:100px;
 		margin: 0;
 		padding: 5px 7px;
 		font-family: Arial, Helvetica, sans-serif;
@@ -106,7 +108,7 @@ $(document).ready(function (){
 	<!-- HTML for SEARCH BAR -->
 	
 	<div align="right" id="tfheader">
-		        <input  type="text" id="tfq" class="tftextinput2" name="q" size="15" maxlength="120" value="I&AM Handbook"><input value="I&AM search" size="8" class="tfbutton2">
+		        <input  type="text" id="tfq" class="tftextinput2" name="q"  maxlength="120" value="I&AM Handbook"><input value="I&AM search"  class="tfbutton2">
 		<div class="tfclear"></div>
 	</div>
 
