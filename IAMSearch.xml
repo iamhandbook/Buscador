@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+<ModulePrefs title="IAMSearch by Badel" >
+        <Require feature="dynamic-height"/>   
+        <Require feature="setprefs" />  
+</ModulePrefs>  
+<Content type="html"><![CDATA[
+<style type="text/css">
+<!--mis historias-->
+
+	#tfheader{
+		background-color:#ffffff;
+	}
+	#tfnewsearch{
+		float:right;
+		padding:20px;
+	}
+	.tftextinput2{
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		color:#666;
+		border:1px solid #007AC2; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+	.tfbutton2 {
+		margin: 0;
+		padding: 5px 7px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		font-weight:bold;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #007AC2; border-right:0px;
+		background: ;
+		background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+		background: -moz-linear-gradient(top,  #57AAF8,  #007AC2);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+	}
+	.tfbutton2:hover {
+		text-decoration: none;
+		background: #007AC2;
+		background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+		background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+	}
+	/* Fixes submit button height problem in Firefox */
+	.tfbutton2::-moz-focus-inner {
+	  border: 0;
+	}
+	.tfclear{
+		clear:both;
+	}
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+
+window.onload = function(){ 
+	//Get submit button esta es la parte que limpia la caja
+	var submitbutton = document.getElementById("tfq");
+	//Add listener to submit button
+	if(submitbutton.addEventListener){
+		submitbutton.addEventListener("click", function() {
+			if (submitbutton.value == 'I&AM Handbook'){
+				submitbutton.value = '';
+			} 
+		});
+	}
+	
+
+};
+
+$(document).ready(function (){
+
+	/*var url = $("#tfnewsearch").attr('action');
+	//Modify form action url*/
+	
+	var url = "";
+	
+	$('.tftextinput2').on('change',function(){
+
+	url = "https://sites.google.com/a/roche.com/identity-access-management-v3-0/system/app/pages/search?scope=search-site&q=" + $("#tfq").val();
+	url = url + "%20-*.png";
+	
+	console.log(url); //mostrar por consola
+	
+	});
+	
+	$('.tfbutton2').click(function(){
+               window.top.location.href=url;
+     })
+
+});
+
+
+</script>
+
+<!--mis historias-->
+	<!-- HTML for SEARCH BAR -->
+	
+	<div id="tfheader">
+		        <input  type="text" id="tfq" class="tftextinput2" name="q" size="30" maxlength="120" value="I&AM Handbook"><input value="I&AM search" size="8" class="tfbutton2">
+		<div class="tfclear"></div>
+	</div>
+
+]]></Content>
+</Module>
