@@ -17,6 +17,7 @@
 	}
 	.tftextinput2{
 		width:210px;
+		text-align:center;
 		margin: 0;
 		padding: 5px 15px;
 		font-family: Arial, Helvetica, sans-serif;
@@ -27,7 +28,7 @@
 		border-bottom-left-radius: 5px 5px;
 	}
 	.tfbutton2 {
-		width:100px;
+        width:100px;
 		margin: 0;
 		padding: 5px 7px;
 		font-family: Arial, Helvetica, sans-serif;
@@ -84,7 +85,7 @@ $(document).ready(function (){
 	/*var url = $("#tfnewsearch").attr('action');
 	//Modify form action url*/
 	
-        var url = "https://sites.google.com/a/roche.com/identity-access-management-v3-0";
+	var url = "https://sites.google.com/a/roche.com/identity-access-management-v3-0";
 	
 	$('.tftextinput2').on('change',function(){
 
@@ -111,6 +112,7 @@ $(document).ready(function (){
 		        <input  type="text" id="tfq" class="tftextinput2" name="q"  maxlength="120" value="I&AM Handbook"><input value="I&AM search"  class="tfbutton2">
 		<div class="tfclear"></div>
 	</div>
+
 
 ]]></Content>
 </Module>
