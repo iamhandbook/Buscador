@@ -106,7 +106,7 @@ $(document).ready(function (){
 	<!-- HTML for SEARCH BAR -->
 	
 	<div align="right" id="tfheader">
-		        <input  type="text" id="tfq" class="tftextinput2" name="q" size="19" maxlength="120" value="I&AM Handbook"><input value="I&AM search" size="8" class="tfbutton2">
+		        <input  type="text" id="tfq" class="tftextinput2" name="q" size="30%" maxlength="120" value="I&AM Handbook"><input value="I&AM search" size="7" class="tfbutton2">
 		<div class="tfclear"></div>
 	</div>
 
