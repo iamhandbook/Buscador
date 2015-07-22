@@ -85,9 +85,10 @@ $(document).ready(function (){
 	/*var url = $("#tfnewsearch").attr('action');
 	//Modify form action url*/
 	
-	var url = "https://sites.google.com/a/roche.com/identity-access-management-v3-0";
+	var url = "https://sites.google.com/a/roche.com/identity-access-management-v3-0/system/app/pages/search?scope=search-site&q=" + $("#tfq").val();
+	url = url + "%20-*.png";
 	
-	$('.tftextinput2').on('change',function(){
+	$('.tftextinput2').keyup(function(){
 
 	url = "https://sites.google.com/a/roche.com/identity-access-management-v3-0/system/app/pages/search?scope=search-site&q=" + $("#tfq").val();
 	url = url + "%20-*.png";
@@ -98,10 +99,20 @@ $(document).ready(function (){
 	
 	$('.tfbutton2').click(function(){
                window.top.location.href=url;
-     })
+     });
+	
+	$('#tfq').focus().keypress(function(e) {
+		if(e.which == 13) {
+		 window.top.location.href=url;
+		}
+	});
 
 });
-
+/*$(document).keypress(function(e) {
+    if(e.which == 13) {
+     alert('You pressed enter!');
+    }
+});*/
 
 </script>
 
@@ -109,7 +120,7 @@ $(document).ready(function (){
 	<!-- HTML for SEARCH BAR -->
 	
 	<div align="right" id="tfheader">
-		        <input  type="text" id="tfq" class="tftextinput2" name="q"  maxlength="120" value="I&AM Handbook"><input value="I&AM search"  class="tfbutton2">
+		        <input  type="text" id="tfq" class="tftextinput2" name="q"  maxlength="120" value="I&AM Handbook"><input id="tfg_button" value="I&AM search"  class="tfbutton2">
 		<div class="tfclear"></div>
 	</div>
 
