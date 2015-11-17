@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-<ModulePrefs title="IAMSearch by Badel" >
+<ModulePrefs title="SASSearch by Badel" >
         <Require feature="dynamic-height"/>   
         <Require feature="setprefs" />  
 </ModulePrefs>  
@@ -71,7 +71,7 @@ window.onload = function(){
 	//Add listener to submit button
 	if(submitbutton.addEventListener){
 		submitbutton.addEventListener("click", function() {
-			if (submitbutton.value == 'I&AM Handbook'){
+			if (submitbutton.value == 'SAS Handbook'){
 				submitbutton.value = '';
 			} 
 		});
@@ -120,7 +120,7 @@ $(document).ready(function (){
 	<!-- HTML for SEARCH BAR -->
 	
 	<div align="right" id="tfheader">
-		        <input  type="text" id="tfq" class="tftextinput2" name="q"  maxlength="120" value=""><input id="tfg_button" value="I&AM search"  class="tfbutton2">
+		        <input  type="text" id="tfq" class="tftextinput2" name="q"  maxlength="120" value=""><input id="tfg_button" value="SAS search"  class="tfbutton2">
 		<div class="tfclear"></div>
 	</div>
 
