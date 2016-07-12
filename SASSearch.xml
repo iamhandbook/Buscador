@@ -85,12 +85,12 @@ $(document).ready(function (){
 	/*var url = $("#tfnewsearch").attr('action');
 	//Modify form action url*/
 	
-	var url = "https://sites.google.com/a/roche.com/identity-access-management-v3-0/system/app/pages/search?scope=search-site&q=" + $("#tfq").val();
+	var url = "https://sites.google.com/a/roche.com/secure-access-services/system/app/pages/search?scope=search-site&q=" + $("#tfq").val();
 	url = url + "%20-*.png";
 	
 	$('.tftextinput2').keyup(function(){
 
-	url = "https://sites.google.com/a/roche.com/identity-access-management-v3-0/system/app/pages/search?scope=search-site&q=" + $("#tfq").val();
+	url = "https://sites.google.com/a/roche.com/secure-access-services/system/app/pages/search?scope=search-site&q=" + $("#tfq").val();
 	url = url + "%20-*.png";
 	
 	console.log(url); //mostrar por consola
